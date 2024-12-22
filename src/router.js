@@ -2,8 +2,8 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Meta from 'vue-meta'
 
-import Home from './views/home'
-import NotFound from './views/not-found'
+import Home from './views/home/home'
+import NotFound from './views/not-found/not-found'
 import './style.css'
 
 Vue.use(Router)

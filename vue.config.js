@@ -9,6 +9,10 @@ module.exports = {
       css: {
         url: false,
       },
+      sass: {
+        // This is the option for `sass-loader` v8 and above
+        additionalData: `@import "@/styles/_variables.scss";`
+      },
     },
   },
   chainWebpack: config => {
