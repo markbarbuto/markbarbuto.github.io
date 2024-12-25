@@ -23,7 +23,9 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+@import "@/styles/_variables.scss";
+
 .navbar-desktop {
   top: 0px;
   left: 0px;
@@ -71,5 +73,4 @@ export default {
   font-stretch: normal;
   text-decoration: none;
 }
-
 </style>

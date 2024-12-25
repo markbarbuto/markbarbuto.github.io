@@ -20,4 +20,5 @@ export default {
 </script>
 
 <style scoped src="./not-found.scss" lang="scss">
+@import "@/styles/_variables.scss";
 </style>
