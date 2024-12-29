@@ -24,12 +24,9 @@
           <img
             src="/assets/succulent.png"
             alt="succulent"
-            class="home-succulent1"
+            class="home-succulent-img"
           />
         </div>
-        <button class="home-view-gallery-button">
-          <span class="home-view-gallery">view gallery</span>
-        </button>
       </div>
     </div>
   </div>

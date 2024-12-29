@@ -12,7 +12,6 @@
   height: 900px;
   display: flex;
   overflow: hidden;
-  position: relative;
   align-items: flex-start;
   flex-shrink: 0;
   background-color: rgba(242, 242, 242, 1);
@@ -20,7 +19,6 @@
  
 .home-background {
   width: 100%;
-  height: 900px;
   display: flex;
   position: absolute;
   align-items: flex-start;
@@ -62,44 +60,28 @@
   left: 0px;
   width: 128px;
   height: 131px;
-  position: absolute;
-}
- 
-.home-desktop {
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  height: 900px;
-  display: flex;
-  overflow: hidden;
-  position: absolute;
-  align-items: flex-start;
-  flex-shrink: 0;
 }
  
 .home-background-blur {
-  top: 0px;
-  left: 0px;
   width: 1440px;
   height: 900px;
   position: absolute;
 }
  
 .home-content-desktop {
-  gap: 48px;
-  top: 325px;
-  left: 83px;
-  width: 710px;
-  display: flex;
-  position: absolute;
+  gap: 200px;
+  padding: 150px 83px;
+  width: 100%;
   align-items: center;
-  flex-shrink: 0;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 500px);
+  grid-auto-rows: auto;
+  justify-content: center;
+  position: relative;
 }
  
 .home-heading-body {
   gap: 18px;
-  width: 711px;
   display: flex;
   align-items: flex-start;
   flex-shrink: 0;
@@ -134,49 +116,12 @@
   text-decoration: none;
 }
  
-.home-view-gallery-button {
-  gap: 10px;
-  top: 772px;
-  left: 630px;
-  width: 180px;
-  display: flex;
-  padding: 12px 36px;
-  position: absolute;
-  align-items: center;
-  border-radius: 8px;
-  justify-content: center;
-  background-color: rgba(0, 0, 0, 1);
-}
- 
-.home-view-gallery {
-  color: rgb(255, 255, 255);
-  height: auto;
-  font-size: 20px;
-  font-style: Bold;
-  text-align: left;
-  font-family: SF Pro Display;
-  font-weight: 700;
-  line-height: 120%;
-  font-stretch: normal;
-  text-decoration: none;
-}
- 
 .home-succulent {
-  top: 182px;
-  right: 15%;
   width: 500px;
   height: 500px;
-  display: flex;
-  overflow: hidden;
-  position: absolute;
-  align-items: flex-start;
-  flex-shrink: 0;
 }
  
-.home-succulent1 {
-  top: 0px;
-  left: 0px;
+.home-succulent-img {
   width: 500px;
   height: 500px;
-  position: absolute;
 }
