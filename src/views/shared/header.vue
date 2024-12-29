@@ -40,11 +40,11 @@ export default {
 .nav-home {
   color: rgba(0, 0, 0, 1);
   height: auto;
-  font-size: 36px;
-  font-style: Bold;
   padding-left: 53px;
   padding-right: 83px;
   text-align: left;
+  font-size: 36px;
+  font-style: Bold;
   font-family: SF Pro Display;
   font-weight: 700;
   line-height: 150%;
@@ -64,7 +64,7 @@ export default {
   color: rgba(0, 0, 0, 1);
   align-content: center;
   height: auto;
-  font-size: 20px;
+  font-size: $main-font-size;
   font-style: Regular;
   text-align: left;
   font-family: SF Pro Display;

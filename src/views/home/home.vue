@@ -27,9 +27,6 @@
             class="home-succulent1"
           />
         </div>
-        <button class="home-view-gallery-button">
-          <span class="home-view-gallery">view gallery</span>
-        </button>
       </div>
     </div>
     <div class="home-featured">
@@ -37,22 +34,41 @@
           featured
         </div>
         <div class="featured-items">
-          <div class="featured-item" v-for="project in projects" :key="project.id">
-            <img :src="project.image" class="featured-image" :alt="project.title" 
-              onerror="this.src='/assets/project-placeholder.svg'; style='padding: 100px;'"
-            />
+          <div class="featured-item" v-for="project in projects" :key="project.id" >
+            <div class="featured-item-heading">
+              <div class="featured-item-category" :class="{
+                coding: project.category === Category.CODING,
+                modelling: project.category === Category.MODELLING,
+                music: project.category === Category.MUSIC,
+              }">
+                {{ project.category }}
+              </div>
+              <div class="featured-item-date">{{ project.date ? moment(project.date).format('YYYY-MM') : 'Ongoing' }}</div>
+            </div>
+            <router-link :to="{ path: '/gallery/' + project.category + '/' + project.id }">
+              <img class="featured-item-image" :src="project.image" :alt="project.title" 
+                onerror="this.src='/assets/project-placeholder.svg'; this.className='featured-item-image-placeholder'"
+              />
+            </router-link>
             <div class="featured-item-content">
-              <div class="featured-item-title">{{ project.title }}</div>
-              <div class="featured-item-date">{{ project.date }}</div>
+              <div class="featured-item-title">
+                <router-link :to="{ path: '/gallery/' + project.category + '/' + project.id }">{{ project.title }}</router-link>
+              </div>
               <div class="featured-item-description">{{ project.description }}</div>
             </div>
           </div>
+        </div>
+        <div class="view-gallery">
+          <router-link to="/gallery" class="view-gallery-button">view gallery</router-link>
         </div>
       </div>
   </div>
 </template>
 
 <script>
+import projects from '@/data/projects';
+import Category from '@/models/category';
+
 export default {
   name: 'Home',
   metaInfo: {
@@ -60,29 +76,8 @@ export default {
   },
   data() {
     return {
-      projects: [
-        {
-          id: 1,
-          title: 'Project 1',
-          date: '2021',
-          description: 'This is a description of project 1',
-          image: '/assets/project1.png',
-        },
-        {
-          id: 2,
-          title: 'Project 2',
-          date: '2021',
-          description: 'This is a description of project 2',
-          image: '/assets/project2.png',
-        },
-        {
-          id: 3,
-          title: 'Project 3',
-          date: '2021',
-          description: 'This is a description of project 3',
-          image: '/assets/project3.png',
-        },
-      ],
+      projects,
+      Category,
     };
   }
 }
