@@ -20,11 +20,12 @@
             find out
           </span>
         </div>
-        <div class="home-succulent">
+        <div class="home-succulent" @mousedown="startDrag" @mousemove="onDrag" @mouseup="endDrag" @mouseleave="endDrag" :style="{ transform: `rotate(${rotation}deg)` }">
           <img
             src="/assets/succulent.png"
             alt="succulent"
             class="home-succulent-img"
+            draggable="false"
           />
         </div>
       </div>
@@ -33,11 +34,14 @@
 </template>
 
 <script>
+import spinner from '@/views/home/spinner.js';
+
 export default {
   name: 'Home',
   metaInfo: {
     title: 'markbarbuto | Home',
   },
+  mixins: [spinner]
 }
 </script>
 

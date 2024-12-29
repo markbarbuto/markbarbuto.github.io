@@ -124,4 +124,10 @@
 .home-succulent-img {
   width: 500px;
   height: 500px;
+  pointer-events: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
