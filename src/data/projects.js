@@ -35,11 +35,11 @@ const featured = [
     music_projects.find(project => project.id === 'overdrive-song')
 ];
 
-const projects = [
+const projects = {
     coding_projects,
     modelling_projects,
     music_projects,
     featured
-];
+};
 
-export default featured;
+export default projects;

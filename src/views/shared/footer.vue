@@ -14,7 +14,7 @@ export default {
 @import "@/styles/_variables.scss";
 
 footer{
-  background-color: #f8f9fa;
+  background-color: rgba(255, 255, 255, 1);
   padding: 2rem;
   text-align: center;
   position: relative;
