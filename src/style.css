@@ -628,3 +628,12 @@
     grid-template-columns: 1fr;
   }
 }
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url('/assets/fonts/SF-Pro-Display-Regular.otf') format('opentype');
+}
+
+body {
+  font-family: 'SF Pro Display', sans-serif;
+}

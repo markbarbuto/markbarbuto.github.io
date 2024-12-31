@@ -45,7 +45,6 @@ export default {
   text-align: left;
   font-size: 36px;
   font-style: Bold;
-  font-family: SF Pro Display;
   font-weight: 700;
   line-height: 150%;
   font-stretch: normal;
@@ -67,7 +66,6 @@ export default {
   font-size: $main-font-size;
   font-style: Regular;
   text-align: left;
-  font-family: SF Pro Display;
   font-weight: 400;
   line-height: 150%;
   font-stretch: normal;

@@ -71,22 +71,12 @@
   border: none;
   cursor: pointer;
 }
-
-.featured-heading {
-  padding: 63px 83px;
-  font-size: $main-font-size;
-  font-style: Regular;
-  text-align: left;
-  font-family: SF Pro Display;
-  font-weight: 400;
-  line-height: 150%;
-  font-stretch: normal;
-}
   
-.featured-items {
+.tab-content {
+  width: 100%;
   display: grid;
-  grid-auto-rows: minmax(400px, 1fr);
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-auto-rows: minmax(350px, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   height: max-content;
   gap: 83px;
   padding: 0px 83px 20px 83px;
@@ -169,6 +159,5 @@
 
 .featured-item-description {
   font-size: $main-font-size;
-  font-family: SF Pro Display;
   color: #555;
 }

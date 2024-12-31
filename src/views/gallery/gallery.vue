@@ -8,16 +8,9 @@
     <div class="tab-content">
       <div class="featured-item" v-for="project in currentTabComponent" :key="project.id" >
           <div class="featured-item-heading">
-            <!-- <div class="featured-item-category" :class="{
-              coding: project.category === Category.CODING,
-              modelling: project.category === Category.MODELLING,
-              music: project.category === Category.MUSIC,
-            }">
-              {{ project.category }}
-            </div> -->
-            <div class="featured-item-date">{{ project.date ? moment(project.date).format('YYYY-MM') : 'Ongoing' }}</div>
+            <div class="featured-item-date">{{ project.completed ? moment(project.date).format('YYYY-MM') : 'ongoing' }}</div>
           </div>
-          <router-link :to="{ path: '/gallery/' + project.category + '/' + project.id }">
+          <router-link :to="{ path: '/gallery/' + project.category.replace(' ', '-') + '/' + project.id }">
             <img class="featured-item-image" :src="project.image" :alt="project.title" 
               onerror="this.src='/assets/project-placeholder.svg'; this.className='featured-item-image-placeholder'"
             />
