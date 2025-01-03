@@ -13,7 +13,7 @@
             }">
             {{ project.category }}
             </div>
-            <div class="featured-item-date">{{ project.completed ? moment(project.date).format('YYYY-MM') : 'ongoing' }}</div>
+            <div class="featured-item-date">{{ project.completedDate ? moment(project.completedDate).format('YYYY-MM-DD') : 'ongoing' }}</div>
         </div>
         <router-link :to="{ path: '/gallery/' + project.category.replace(' ', '-') + '/' + project.id }">
             <img class="featured-item-image" :src="project.image" :alt="project.title" 
