@@ -47,10 +47,12 @@ const featured = [
     music_projects.find(project => project.id === 'overdrive-postmalone-song')
 ];
 
+function getCompletedDate(project) { return project.completedDate ?? new Date(8640000000000000); }
+
 const projects = {
-    coding_projects: coding_projects.sort((a, b) => b.date - a.date),
-    modelling_projects: modelling_projects.sort((a, b) => b.date - a.date),
-    music_projects: music_projects.sort((a, b) => b.date - a.date),
+    coding_projects: coding_projects.sort((a, b) => getCompletedDate(b) - getCompletedDate(a)),
+    modelling_projects: modelling_projects.sort((a, b) => getCompletedDate(b) - getCompletedDate(a)),
+    music_projects: music_projects.sort((a, b) => getCompletedDate(b) - getCompletedDate(a)),
     featured
 };
 
