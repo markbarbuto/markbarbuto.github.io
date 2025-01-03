@@ -2,6 +2,20 @@
   <header class="navbar-desktop">
     <span class="nav-home">
       <router-link to="/">markbarbuto</router-link>
+      <span class="nav-socials">
+        <a href="https://www.github.com/markbarbuto/" target="_blank">
+          <img src="/assets/greenorb1.png" width="30px" height="30px" alt="github" />
+        </a>
+        <a href="https://www.linkedin.com/in/mark-barbuto-680124204/" target="_blank">
+          <img src="favicon.svg" width="30px" height="30px" alt="linkedin" />
+        </a>
+        <a href="https://open.spotify.com/user/badieshisha" target="_blank">
+          <img src="favicon.svg" width="30px" height="30px" alt="spotify" />
+        </a>
+        <a href="https://www.youtube.com/@markbarbuto22" target="_blank">
+          <img src="favicon.svg" width="30px" height="30px" alt="youtube" />
+        </a>
+      </span>
     </span>
     <nav class="nav-links">
       <span class="nav-item">
@@ -23,52 +37,6 @@ export default {
 }
 </script>
 
-<style scoped lang="scss">
+<style scoped src="./header.scss" lang="scss">
 @import "@/styles/_variables.scss";
-
-.navbar-desktop {
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  padding: 30px;
-  position:-webkit-sticky;
-  display: flex;
-  justify-content: space-between;
-  background-color: rgba(255, 255, 255, 1);
-}
- 
-.nav-home {
-  color: rgba(0, 0, 0, 1);
-  height: auto;
-  padding-left: 53px;
-  padding-right: 83px;
-  text-align: left;
-  font-size: 36px;
-  font-style: Bold;
-  font-weight: 700;
-  line-height: 150%;
-  font-stretch: normal;
-  text-decoration: none;
-}
- 
-.nav-links {
-  gap: 100px;
-  display: flex;
-  padding-right: 53px;
-  justify-content: flex-end;
-
-}
- 
-.nav-item {
-  color: rgba(0, 0, 0, 1);
-  align-content: center;
-  height: auto;
-  font-size: $main-font-size;
-  font-style: Regular;
-  text-align: left;
-  font-weight: 400;
-  line-height: 150%;
-  font-stretch: normal;
-  text-decoration: none;
-}
 </style>
