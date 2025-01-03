@@ -6,20 +6,20 @@
       <button class="tab" :class="{ active: currentTab === 'music' }" @click="currentTab = 'music'">music production</button>
     </div>
     <div class="tab-content">
-      <div class="featured-item" v-for="project in currentTabComponent" :key="project.id" >
-          <div class="featured-item-heading">
-            <div class="featured-item-date">{{ project.completed ? moment(project.date).format('YYYY-MM') : 'ongoing' }}</div>
+      <div class="gallery-item" v-for="project in currentTabComponent" :key="project.id" >
+          <div class="gallery-item-heading">
+            <div class="gallery-item-date">{{ project.completed ? moment(project.date).format('YYYY-MM') : 'ongoing' }}</div>
           </div>
           <router-link :to="{ path: '/gallery/' + project.category.replace(' ', '-') + '/' + project.id }">
-            <img class="featured-item-image" :src="project.image" :alt="project.title" 
-              onerror="this.src='/assets/project-placeholder.svg'; this.className='featured-item-image-placeholder'"
+            <img class="gallery-item-image" :src="project.image" :alt="project.title" 
+              onerror="this.src='/assets/project-placeholder.svg'; this.className='gallery-item-image-placeholder'"
             />
           </router-link>
-          <div class="featured-item-content">
-            <div class="featured-item-title">
+          <div class="gallery-item-content">
+            <div class="gallery-item-title">
               <router-link :to="{ path: '/gallery/' + project.category + '/' + project.id }">{{ project.title }}</router-link>
             </div>
-            <div class="featured-item-description">{{ project.description }}</div>
+            <div class="gallery-item-description">{{ project.description }}</div>
           </div>
         </div>
     </div>
