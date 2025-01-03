@@ -4,16 +4,16 @@
       <router-link to="/">markbarbuto</router-link>
       <span class="nav-socials">
         <a href="https://www.github.com/markbarbuto/" target="_blank">
-          <img src="/assets/greenorb1.png" width="30px" height="30px" alt="github" />
+          <font-awesome-icon class="social-icon" :icon="['fab', 'github']" size="xs" />
         </a>
         <a href="https://www.linkedin.com/in/mark-barbuto-680124204/" target="_blank">
-          <img src="favicon.svg" width="30px" height="30px" alt="linkedin" />
+          <font-awesome-icon class="social-icon" :icon="['fab', 'linkedin']" size="xs" />
         </a>
         <a href="https://open.spotify.com/user/badieshisha" target="_blank">
-          <img src="favicon.svg" width="30px" height="30px" alt="spotify" />
+          <font-awesome-icon class="social-icon" :icon="['fab', 'spotify']" size="xs" />
         </a>
         <a href="https://www.youtube.com/@markbarbuto22" target="_blank">
-          <img src="favicon.svg" width="30px" height="30px" alt="youtube" />
+          <font-awesome-icon class="social-icon" :icon="['fab', 'youtube']" size="xs" />
         </a>
       </span>
     </span>
@@ -32,6 +32,9 @@
 </template>
 
 <script>
+// import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+// import { fas } from '@fortawesome/free-solid-svg-icons'
+
 export default {
   name: 'Header'
 }

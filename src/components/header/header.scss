@@ -33,7 +33,7 @@
   }
    
   .nav-item {
-    color: rgba(0, 0, 0, 1);
+    color: rgba(0, 0, 0, 0.75);
     align-content: center;
     height: auto;
     font-size: $main-font-size;
@@ -44,10 +44,22 @@
     font-stretch: normal;
     text-decoration: none;
   }
+
+  .nav-item:hover {
+    color: rgba(0, 0, 0, 1);
+    transition: 0.25s;
+  }
   
   .nav-socials {
     display: flex;
     gap: 10px;
-    justify-content: space-between;;
-    align-items: center;
+  }
+  
+  .social-icon {
+    color: rgba(0, 0, 0, 0.75);
+  }
+
+  .social-icon:hover {
+    color: rgba(0, 0, 0, 1);
+    transition: 0.25s;
   }

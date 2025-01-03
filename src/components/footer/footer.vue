@@ -10,16 +10,6 @@ export default {
 }
 </script>
 
-<style scoped lang="scss">
+<style scoped src="./footer.scss" lang="scss">
 @import "@/styles/_variables.scss";
-
-footer{
-  background-color: rgba(255, 255, 255, 1);
-  padding: 2rem;
-  text-align: center;
-  position: relative;
-  width: 100%;
-  margin-top: 20px;
-  font-size: 15px;
-}
 </style>
