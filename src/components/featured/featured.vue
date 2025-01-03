@@ -1,7 +1,7 @@
 <template>
-  <div class="home-featured">
+  <div class="home-featured" id="featured">
     <div class="featured-heading">
-        featured
+      <a href="#featured" class="featured-heading-text">featured</a>
     </div>
     <div class="featured-items">
         <div class="featured-item" v-for="project in projects.featured" :key="project.id" >
