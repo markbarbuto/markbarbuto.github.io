@@ -19,7 +19,7 @@ footer{
   text-align: center;
   position: relative;
   width: 100%;
-  bottom: 0;
+  margin-top: 20px;
   font-size: 15px;
 }
 </style>
