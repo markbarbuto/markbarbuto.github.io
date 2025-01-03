@@ -47,7 +47,7 @@
 }
 
 .featured-item:hover{
-  box-shadow: 0 8px 16px rgba(68, 153, 81, 0.2),;
+  box-shadow: 0 0 16px rgba(68, 153, 81, 0.2),;
   transition: 0.25s;
   transform: scale(1.025);
   transition: 0.25s;
@@ -133,6 +133,10 @@
 }
 
 .view-gallery-button:hover {
-  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 1);
+
+  box-shadow: 0px 0px 32px 16px rgba(68, 153, 81, 0.2),;
+  transition: 0.25s;
+  transform: scale(1.025);
   transition: 0.25s;
 }
