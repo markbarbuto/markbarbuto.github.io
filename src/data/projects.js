@@ -47,8 +47,7 @@ const featured = [
     music_projects.find(project => project.id === 'overdrive-postmalone-song')
 ];
 
-function getCompletedDate(project) { return project.completedDate ?? new Date(8640000000000000); }
-
+function getCompletedDate(project) { return project.completedDate ?? project.createdDate; }
 const projects = {
     coding_projects: coding_projects.sort((a, b) => getCompletedDate(b) - getCompletedDate(a)),
     modelling_projects: modelling_projects.sort((a, b) => getCompletedDate(b) - getCompletedDate(a)),
