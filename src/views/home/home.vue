@@ -24,6 +24,11 @@
         </div>
       </div>
     </div>
+    <div class="arrow-down" style="position: relative; margin-top: -16px; margin-bottom: -16px; z-index: 1;">
+      <a href="#featured" class="arrow-down-link">
+        <font-awesome-icon :icon="['fas', 'circle-chevron-down']" size="2xl" />
+      </a>
+    </div>
     <Featured/>
   </div>
 </template>
