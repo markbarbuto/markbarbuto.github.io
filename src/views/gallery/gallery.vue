@@ -1,5 +1,6 @@
 <template>
   <div class="gallery-container">
+    <div class="section-heading">gallery</div>
     <div class="tabs">
       <button class="tab" :class="{ active: currentTab === 'coding' }" @click="currentTab = 'coding'">coding</button>
       <button class="tab" :class="{ active: currentTab === 'modelling' }" @click="currentTab = 'modelling'">3D modelling</button>

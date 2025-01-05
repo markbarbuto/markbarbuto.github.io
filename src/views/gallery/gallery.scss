@@ -48,7 +48,7 @@
   display: grid;
   grid-template-columns: repeat(var(--count), minmax(0, 1fr));
   justify-content: center;
-  margin: 20px;
+  margin-bottom: 20px;
   position: relative;
 }
 

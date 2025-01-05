@@ -1,3 +1,5 @@
+@import "@/styles/_variables.scss";
+
 :root {
   --dl-size-size-large: 144px;
   --dl-size-size-small: 48px;
@@ -636,6 +638,7 @@
 
 body {
   font-family: 'SF Pro Display', sans-serif;
+  font-size: $main-font-size
 }
 
 .container {
@@ -650,4 +653,15 @@ body {
 
 html {
   scroll-behavior: smooth;
+}
+
+.section-heading {
+  padding: 25px 83px;
+  align-self: center;
+  font-size: $heading-font-size;
+  font-style: Regular;
+  text-align: left;
+  font-weight: 400;
+  line-height: 150%;
+  font-stretch: normal;
 }

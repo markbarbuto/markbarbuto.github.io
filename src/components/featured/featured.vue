@@ -1,6 +1,6 @@
 <template>
   <div class="home-featured" id="featured">
-    <div class="featured-heading">
+    <div class="section-heading">
       <a href="#featured" class="featured-heading-text">featured</a>
     </div>
     <div class="featured-items">
