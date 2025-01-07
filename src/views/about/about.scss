@@ -11,6 +11,7 @@
   overflow: hidden;
   align-items: flex-start;
   flex-shrink: 0;
+  padding-bottom: 20px;
 }
   
 .about-content {
@@ -38,12 +39,12 @@
   width: fit-content;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
   justify-content: flex-start;
 }
 
 .about-image {
-  height: 500px;
+  // height: 500px;
   width: 400px;
   border-radius: 20px;
 }
@@ -51,4 +52,8 @@
 .icon-905gunners {
   width: 32px;
   height: 32px;
+}
+
+.about-content-containter2 {
+  display: grid;
 }

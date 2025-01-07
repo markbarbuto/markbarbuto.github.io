@@ -3,6 +3,7 @@
     <div class="section-heading">
       about
     </div>
+    <!-- section 1 -->
     <div class="about-content-container">
       <div class="about-content">
         <span class="about-description">
@@ -21,6 +22,15 @@
           <p>
             soccer is my thing. and music; just creating things in general. art. that's the word that describes me the best. just look at me. i am art.
           </p>
+        </span>
+        <img class="about-image" src="/assets/mark.jpg" alt="mark" />
+      </div>
+    </div>
+    <!-- section 2 -->
+    <div class="about-content-container" style="padding-top: 100px">
+      <div class="about-content">
+        <img class="about-image" src="/assets/905gunners-mark.png" alt="mark" />
+        <span class="about-description">
           <p style="display: inline-flex;">i am also part of the 905gunners <img class="icon-905gunners" src="/assets/905gunners.png" alt="905gunners" /></p>
           <p>we are a soccer team that posts our games as well as other soccer-related content. so check it out here 
             <a href="https://www.youtube.com/@905-Gunners" target="_blank">
@@ -35,7 +45,6 @@
           </p>
           <p>anyway, thanks for stopping by.</p>
         </span>
-        <img class="about-image" src="/assets/mark.jpg" alt="mark" />
       </div>
     </div>
   </div>
