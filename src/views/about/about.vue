@@ -22,7 +22,7 @@
             soccer is my thing. and music; just creating things in general. art. that's the word that describes me the best. just look at me. i am art.
           </p>
           <p style="display: inline-flex;">i am also part of the 905gunners <img class="icon-905gunners" src="/assets/905gunners.png" alt="905gunners" /></p>
-          <p>a soccer team that posts our games as well as other soccer-related content. so check it out here 
+          <p>we are a soccer team that posts our games as well as other soccer-related content. so check it out here 
             <a href="https://www.youtube.com/@905-Gunners" target="_blank">
               <font-awesome-icon class="social-icon" :icon="['fab', 'youtube']" />
             </a>&nbsp;
