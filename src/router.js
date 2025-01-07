@@ -5,6 +5,7 @@ import Meta from 'vue-meta'
 import Home from './views/home/home'
 import Gallery from './views/gallery/gallery'
 import About from './views/about/about'
+import Contact from './views/contact/contact'
 import NotFound from './views/not-found/not-found'
 import './style.scss'
 
@@ -27,6 +28,11 @@ export default new Router({
       name: 'about',
       path: '/about',
       component: About,
+    },
+    {
+      name: 'contact',
+      path: '/contact',
+      component: Contact,
     },
     {
       name: '404 - Not Found',
