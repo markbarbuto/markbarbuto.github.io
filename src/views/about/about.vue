@@ -29,10 +29,13 @@
     <!-- section 2 -->
     <div class="about-content-container" style="padding-top: 100px">
       <div class="about-content">
-        <img class="about-image" src="/assets/905gunners-mark.png" alt="mark" />
+        <img class="about-image" src="/assets/905gunners-mark.png" alt="905gunners-mark" />
         <span class="about-description">
-          <p style="display: inline-flex;">i am also part of the 905gunners <img class="icon-905gunners" src="/assets/905gunners.png" alt="905gunners" /></p>
-          <p>we are a soccer team that posts our games as well as other soccer-related content. so check it out here 
+          <p style="display: inline-flex;">i am also part of the 905gunners
+            <font-awesome-icon class="social-icon" :icon="['fas', 'futbol']" size="lg" style="margin-left: 5px; margin-top: 2px;" />
+            <img class="icon-905gunners" src="/assets/905gunners.png" alt="905gunners" />
+          </p>
+          <p>we are a soccer team that plays weekly, and we post our matches each week as well as other soccer-related content. so check it out here 
             <a href="https://www.youtube.com/@905-Gunners" target="_blank">
               <font-awesome-icon class="social-icon" :icon="['fab', 'youtube']" />
             </a>&nbsp;
@@ -43,8 +46,27 @@
               <font-awesome-icon class="social-icon" :icon="['fab', 'tiktok']" size="sm" />
             </a>
           </p>
+          <p>here's a player shot i made of myself. i made one of these for each player on our team and printed them onto a deck of cards.</p>
+          <p>we also like to collaborate with other social media presences and join local events.</p>
+        </span>
+      </div>
+    </div>
+    <!-- section 3 -->
+    <div class="about-content-container" style="padding-top: 100px">
+      <div class="about-content">
+        <span class="about-description">
+          <p>lastly, i recently discovered my desire to travel.</p>
+          <p>these pictures were taken in spain in the summer of 2024. 
+            all of these photos were taken in different towns in mallorca, one of the small balearic island off the east coast of spain.
+          </p>
+          <p>the largest photo is my favourite because of its vibrant colours and i think the subject is perfectly placed.</p>
           <p>anyway, thanks for stopping by.</p>
         </span>
+        <div class="images">
+            <img class="about-image" src="/assets/mallorca2.jpg" alt="mallorca" style="position: relative; z-index: 3; top: -50px; left: 50px;" />
+            <img class="about-image" src="/assets/mallorca3.jpg" alt="mallorca" style="position: relative; z-index: 2; top: -100px; left: 200px;" />
+            <img class="about-image" src="/assets/mallorca.jpg" alt="mallorca" style="position: relative; z-index: 1; top: -450px; left: -50px;" />
+        </div>
       </div>
     </div>
   </div>

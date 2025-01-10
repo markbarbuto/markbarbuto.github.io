@@ -43,13 +43,18 @@
   justify-content: flex-start;
 }
 
+.images {
+  height: 600px;
+}
+
 .about-image {
   // height: 500px;
   width: 400px;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 .icon-905gunners {
+  margin-top: -2px;
   width: 32px;
   height: 32px;
 }
