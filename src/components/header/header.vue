@@ -25,7 +25,7 @@
         <router-link to="/about">about</router-link>
       </span>
       <span class="nav-item">
-        <router-link to="/contact">contact</router-link>
+        <a href="mailto:markbarbuto@outlook.com">contact</a>
       </span>
     </nav>
   </header>
