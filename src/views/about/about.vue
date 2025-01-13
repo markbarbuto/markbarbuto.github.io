@@ -77,7 +77,7 @@
 export default {
   name: 'About',
   metaInfo: {
-    title: 'markbarbuto | About',
+    title: 'markbarbuto | about',
   }
 }
 </script>
