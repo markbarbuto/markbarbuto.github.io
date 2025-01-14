@@ -24,5 +24,5 @@ module.exports = {
       return args;
     });
   },
-  publicPath: process.env.NODE_ENV === 'gh-pages' ? '/' : '/'
+  publicPath: '/'//process.env.NODE_ENV === 'gh-pages' ? '/' : '/'
 };
