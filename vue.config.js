@@ -23,5 +23,6 @@ module.exports = {
       args[0].patterns[0].globOptions.ignore = args[0].patterns[0].globOptions.ignore.map(i => i.replace(publicDir, escapePublicDir));
       return args;
     });
-  }
+  },
+  publicPath: process.env.NODE_ENV === 'gh-pages' ? '/' : '/'
 };
