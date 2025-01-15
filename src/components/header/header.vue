@@ -34,7 +34,7 @@
 <script>
 // import { useWindowSize } from '@vueuse/core'
 // const { width } = useWindowSize()
-width = 860;
+const width = 860;
 
 export default {
   name: 'Header',
