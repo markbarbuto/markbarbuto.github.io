@@ -51,7 +51,6 @@
  
 .home-greeting {
   color: rgba(0, 0, 0, 1);
-  width: 711px;
   height: auto;
   font-size: 49px;
   font-style: Bold;
@@ -64,9 +63,7 @@
  
 .home-description {
   color: rgba(0, 0, 0, 1);
-  width: 711px;
   height: auto;
-  font-size: $main-font-size;
   font-style: Regular;
   text-align: left;
   font-weight: 400;
@@ -116,4 +113,16 @@
   transform: scale(1.025);
   transition: 0.25s;
   border-radius: 50%;
+}
+
+@media(max-width: $media-width-tablet) { /* tablets */
+  .home-greeting {
+    font-size: 30px;
+  }
+}
+
+@media(max-width: $media-width-mobile) { /* smartphones */
+  .home-greeting {
+    font-size: 20px;
+  }
 }

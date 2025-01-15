@@ -17,7 +17,7 @@
         </a>
       </span>
     </span>
-    <nav class="nav-links">
+    <nav v-if="width >= 860" class="nav-links">
       <span class="nav-item">
         <router-link to="/gallery">gallery</router-link>
       </span>
@@ -32,11 +32,15 @@
 </template>
 
 <script>
-// import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-// import { fas } from '@fortawesome/free-solid-svg-icons'
+// import { useWindowSize } from '@vueuse/core'
+// const { width } = useWindowSize()
+width = 860;
 
 export default {
-  name: 'Header'
+  name: 'Header',
+  data() {
+    return { width };
+  } 
 }
 </script>
 
