@@ -20,7 +20,7 @@
   display: flex;
   position: absolute;
   align-items: flex-start;
-  height: 650px;
+  height: 450px;
   overflow: hidden;
   flex-shrink: 1;
 }
@@ -42,7 +42,7 @@
 }
  
 .home-heading-body {
-  gap: 18px;
+  gap: 20px;
   display: flex;
   align-items: flex-start;
   flex-shrink: 0;
@@ -119,10 +119,52 @@
   .home-greeting {
     font-size: 30px;
   }
+
+  .home-content {
+    gap: 100px;
+    padding: 40px;
+    grid-template-columns: repeat(auto-fit, 400px);
+  }
+
+  .home-succulent {
+    width: 400px;
+    height: 400px;
+  }
+
+  .home-succulent-img {
+    width: 400px;
+    height: 400px;
+  }
+
+  .arrow-down {
+    margin-top: -16px;
+    margin-bottom: -16px;
+  }
 }
 
 @media(max-width: $media-width-mobile) { /* smartphones */
   .home-greeting {
     font-size: 20px;
+  }
+
+  .home-content {
+    gap: 40px;
+    padding: 20px;
+    grid-template-columns: repeat(auto-fit, 350px);
+  }
+
+  .home-succulent {
+    width: 350px;
+    height: 350px;
+  }
+
+  .home-succulent-img {
+    width: 350px;
+    height: 350px;
+  }
+
+  .arrow-down {
+    margin-top: -12px;
+    margin-bottom: -12px;
   }
 }

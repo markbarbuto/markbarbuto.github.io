@@ -589,7 +589,7 @@ html {
     font-size: $main-font-size-tablet;
   }
   .section-heading{
-    padding: 10px 20px;
+    padding: 20px 40px;
     font-size: $heading-font-size-tablet;
   }
 }
@@ -599,6 +599,7 @@ html {
     font-size: $main-font-size-mobile;
   }
   .section-heading{
+    padding: 10px 15px;
     font-size: $heading-font-size-mobile;
   }
 }
