@@ -1,11 +1,6 @@
 <template>
   <div class="home-container">
     <div class="home-content-container">
-      <div class="home-background">
-        <img src="/assets/backgroundblur.png" class="home-background-blur" />
-        <div class="home-desktop">
-        </div>
-      </div>
       <div class="home-content">
         <div class="home-heading-body">
           <span class="home-greeting">hello, this is my portfolio.</span>
