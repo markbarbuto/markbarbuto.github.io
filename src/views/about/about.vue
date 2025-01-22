@@ -63,9 +63,9 @@
           <p>anyway, thanks for stopping by.</p>
         </span>
         <div class="images">
-            <img class="about-image" src="/assets/mallorca2.jpg" alt="mallorca" style="position: relative; z-index: 3; top: -50px; left: 50px;" />
-            <img class="about-image" src="/assets/mallorca3.jpg" alt="mallorca" style="position: relative; z-index: 2; top: -100px; left: 200px;" />
-            <img class="about-image" src="/assets/mallorca.jpg" alt="mallorca" style="position: relative; z-index: 1; top: -450px; left: -50px;" />
+            <img class="about-image img2" src="/assets/mallorca2.jpg" alt="mallorca" />
+            <img class="about-image img3" src="/assets/mallorca3.jpg" alt="mallorca" />
+            <img class="about-image img1" src="/assets/mallorca.jpg" alt="mallorca" />
         </div>
       </div>
     </div>

@@ -15,16 +15,6 @@
   background-color: rgba(242, 242, 242, 1);
 }
  
-.home-background {
-  width: 100%;
-  display: flex;
-  position: absolute;
-  align-items: flex-start;
-  height: 450px;
-  overflow: hidden;
-  flex-shrink: 1;
-}
- 
 .home-background-blur {
   width: 100%;
 }
@@ -100,8 +90,8 @@
 
 .arrow-down {
   position: relative; 
-  margin-top: -16px;
-  margin-bottom: -16px;
+  margin-top: -20px;
+  margin-bottom: -20px;
   z-index: 1;
   color: rgba(0, 0, 0, 0.75);
 }
@@ -164,7 +154,7 @@
   }
 
   .arrow-down {
-    margin-top: -12px;
-    margin-bottom: -12px;
+    margin-top: -10px;
+    margin-bottom: -10px;
   }
 }

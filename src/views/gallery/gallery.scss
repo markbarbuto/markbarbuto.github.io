@@ -48,7 +48,7 @@
   display: grid;
   grid-template-columns: repeat(var(--count), minmax(0, 1fr));
   justify-content: center;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   position: relative;
 }
 
@@ -160,4 +160,94 @@
 .gallery-item-description {
   font-size: $main-font-size;
   color: #555;
+}
+
+@media(max-width: $media-width-tablet) { /* tablets */
+  .tabs {
+    font-size: $main-font-size-tablet;
+    --tab-width: 250px;
+    --gap-width: 75px;
+  }
+  .tabs::after {
+    margin-top: 25px;
+  }
+
+  .gallery-item-category {
+    font-size: $main-font-size-tablet;
+  }
+
+  .gallery-item-date {
+    font-size: $main-font-size-tablet;
+  }
+
+  .gallery-item-heading {
+    padding: 8px;
+  }
+
+  .gallery-item-title {
+    font-size: $main-font-size-tablet + 4px;
+    margin-bottom: 5px;
+  }
+  
+  .gallery-item-description {
+    font-size: $main-font-size-tablet;
+  }
+
+  .tab-content {
+    grid-auto-rows: minmax(200px, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 40px;
+    padding: 0px 40px 20px 40px;
+    margin-bottom: 20px;
+  }
+
+  .gallery-item-image-placeholder{
+    padding: 80px;
+  }
+}
+
+@media(max-width: $media-width-mobile) { /* smartphones */
+  .tabs {
+    font-size: $main-font-size-mobile;
+    --tab-width: 200px;
+    --gap-width: 50px;
+    margin-bottom: 20px;
+  }
+
+  .tabs::after {
+    margin-top: 20px;
+  }
+  
+  .gallery-item-category {
+    font-size: $main-font-size-mobile;
+  }
+
+  .gallery-item-date {
+    font-size: $main-font-size-mobile;
+  }
+
+  .gallery-item-heading {
+    padding: 5px;
+  }
+
+  .gallery-item-title {
+    font-size: $main-font-size-mobile + 2px;
+    margin-bottom: 5px;
+  }
+  
+  .gallery-item-description {
+    font-size: $main-font-size-mobile;
+  }
+
+  .tab-content {
+    grid-auto-rows: minmax(150px, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 15px;
+    padding: 0px 15px 10px 15px;
+    margin-bottom: 10px;
+  }
+
+  .gallery-item-image-placeholder{
+    padding: 50px;
+  }
 }
