@@ -53,6 +53,27 @@
   border-radius: 10px;
 }
 
+.img1 {
+  position: relative;
+  z-index: 1;
+  top: -450px; 
+  left: -50px;
+}
+
+.img2 {
+  position: relative;
+  z-index: 3;
+  top: -50px;
+  left: 50px;
+}
+
+.img3 {
+  position: relative;
+  z-index: 2;
+  top: -100px;
+  left: 200px;
+}
+
 .icon-905gunners {
   margin-top: -2px;
   width: 32px;
@@ -61,4 +82,141 @@
 
 .about-content-containter2 {
   display: grid;
+}
+
+@media(max-width: 1024px) { /* iPad Pro */
+  .about-content {
+    gap: 100px;
+    grid-template-columns: repeat(auto-fit, 350px);
+  }
+
+  .about-content-container{
+    padding-bottom: 0;
+  }
+
+  .about-description {
+    font-size: $main-font-size-tablet + 4px;
+    gap: 10px;
+  }
+
+  .images {
+    height: 450px;
+  }
+
+  .about-image {
+    width: 350px;
+  }
+
+  .icon-905gunners {
+    width: 28px;
+    height: 28px;
+  }
+
+  .img1 {
+    top: -350px; 
+    left: -10px;
+    width: 300px;
+  }
+
+  .img2 {
+    top: -50px;
+    left: 20px;
+    width: 300px;
+  }
+
+  .img3 {
+    top: -75px;
+    left: 100px;
+    width: 250px;
+  }
+}
+
+@media(max-width: $media-width-tablet) { /* tablets */
+  .about-content {
+    gap: 70px;
+    grid-template-columns: repeat(auto-fit, 290px);
+  }
+
+  .about-content-container{
+    padding-bottom: 0;
+  }
+
+  .about-description {
+    font-size: $main-font-size-tablet + 2px;
+    gap: 10px;
+  }
+
+  .images {
+    height: 350px;
+  }
+
+  .about-image {
+    width: 290px;
+  }
+
+  .icon-905gunners {
+    width: 28px;
+    height: 28px;
+  }
+
+  .img1 {
+    top: -290px; 
+    left: -10px;
+    width: 250px;
+  }
+
+  .img2 {
+    top: -50px;
+    left: 20px;
+    width: 250px;
+  }
+
+  .img3 {
+    top: -75px;
+    left: 100px;
+    width: 200px;
+  }
+}
+
+@media(max-width: $media-width-mobile) { /* smartphones */
+  .about-content {
+    gap: 5px;
+    grid-template-columns: repeat(auto-fit, 200px);
+  }
+
+  .about-description {
+    font-size: $main-font-size-mobile + 4px;
+    gap: 5px;
+  }
+
+  .images {
+    height: 300px;
+  }
+
+  .about-image {
+    width: 200px;
+  }
+
+  .icon-905gunners {
+    width: 24px;
+    height: 24px;
+  }
+
+  .img1 {
+    top: -125px; 
+    left: 10px;
+    width: 175px;
+  }
+
+  .img2 {
+    top: 0px;
+    left: 40px;
+    width: 150px;
+  }
+
+  .img3 {
+    top: -15px;
+    left: 70px;
+    width: 130px;
+  }
 }
