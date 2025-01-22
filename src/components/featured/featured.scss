@@ -114,7 +114,7 @@
 }
 
 .view-gallery {
-  padding: 0px 23px 20px 83px;
+  padding-bottom: 20px;
   height: auto;
   display: grid;
   justify-content: center;
@@ -125,7 +125,6 @@
   border-radius: 8px;
   background-color: rgb(64, 64, 64);
   color: rgb(255, 255, 255);
-  font-size: $main-font-size;
   text-align: center;
   line-height: 120%;
   font-stretch: normal;
@@ -174,6 +173,10 @@
   .featured-item-image-placeholder{
     padding: 100px;
   }
+
+  .view-gallery-button{
+    padding: 10px 30px;
+  }
   
 }
 
@@ -211,4 +214,11 @@
     padding: 50px;
   }
   
+  .view-gallery{
+    padding-bottom: 0;
+  }
+
+  .view-gallery-button{
+    padding: 8px 24px;
+  }
 }
