@@ -9,7 +9,7 @@
             find out
           </span>
         </div>
-        <div class="home-succulent" @mousedown="startDrag" @mousemove="onDrag" @mouseup="endDrag" @mouseleave="endDrag" :style="{ transform: `rotate(${rotation}deg)` }">
+        <div class="home-succulent" @mouseenter="startDrag" @mousemove="onDrag" @mouseup="endDrag" @mouseleave="endDrag" :style="{ transform: `rotate(${rotation}deg)` }">
           <img
             src="/assets/succulent.png"
             alt="succulent"
