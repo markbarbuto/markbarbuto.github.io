@@ -41,18 +41,14 @@ const music_projects = [
                 'My recreation of this song in FL Studio'),
 ];
 
-const featured = [
-    coding_projects.find(project => project.id === 'music-journal-app'),
-    modelling_projects.find(project => project.id === 'home-office-3d-design'),
-    music_projects.find(project => project.id === 'overdrive-postmalone-song')
-];
-
 function getCompletedDate(project) { return project.completedDate ?? project.createdDate; }
-const projects = {
-    coding_projects: coding_projects.sort((a, b) => getCompletedDate(b) - getCompletedDate(a)),
-    modelling_projects: modelling_projects.sort((a, b) => getCompletedDate(b) - getCompletedDate(a)),
-    music_projects: music_projects.sort((a, b) => getCompletedDate(b) - getCompletedDate(a)),
-    featured
-};
 
-export default projects;
+const projects = coding_projects
+    .concat(modelling_projects)
+    .concat(music_projects)
+    .sort((a, b) => getCompletedDate(b) - getCompletedDate(a));
+
+const featured_ids = ['music-journal-app', 'home-office-3d-design', 'overdrive-postmalone-song']
+const featured = projects.filter(p => featured_ids.includes(p.id))
+
+export { projects, featured };

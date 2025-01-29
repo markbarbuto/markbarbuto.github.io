@@ -30,7 +30,7 @@
 
 <script>
 import spinner from '@/views/home/spinner.js';
-import projects from '@/data/projects';
+import { projects } from '@/data/projects';
 import Category from '@/models/category';
 import Featured from '@/components/featured/featured.vue';
 

@@ -4,7 +4,7 @@
       <a href="#featured" class="featured-heading-text">featured</a>
     </div>
     <div class="featured-items">
-        <div class="featured-item" v-for="project in projects.featured" :key="project.id" >
+        <div class="featured-item" v-for="project in featured" :key="project.id" >
         <div class="featured-item-heading">
             <div class="featured-item-category" :class="{
             coding: project.category === Category.CODING,
@@ -15,7 +15,7 @@
             </div>
             <div class="featured-item-date">{{ project.completedDate ? moment(project.completedDate).format('YYYY-MM-DD') : 'ongoing' }}</div>
         </div>
-        <router-link :to="{ path: '/gallery/' + project.category.replace(' ', '-') + '/' + project.id }">
+        <router-link :to="{ path: '/gallery/' + project.id }">
             <img class="featured-item-image" :src="project.image" :alt="project.title" 
             onerror="this.src='/assets/project-placeholder.svg'; this.className='featured-item-image-placeholder'"
             />
@@ -35,14 +35,15 @@
 </template>
 
 <script>
-import projects from '@/data/projects';
+import { projects, featured } from '@/data/projects';
 import Category from '@/models/category';
 
 export default {
 name: 'Featured',
 data() {
   return {
-    projects,
+    // projects,
+    featured,
     Category,
   };
 }

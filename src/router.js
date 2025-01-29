@@ -4,6 +4,7 @@ import Meta from 'vue-meta'
 
 import Home from './views/home/home'
 import Gallery from './views/gallery/gallery'
+import Project from './views/project/project'
 import About from './views/about/about'
 import NotFound from './views/not-found/not-found'
 import './style.scss'
@@ -22,6 +23,11 @@ export default new Router({
       name: 'gallery',
       path: '/gallery',
       component: Gallery,
+    },
+    {
+      name: 'project',
+      path: '/gallery/:id',
+      component: Project,
     },
     {
       name: 'about',
